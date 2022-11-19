@@ -1,0 +1,125 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/dinob/.m2/repository/org/apache/maven/plugins/maven-javadoc-plugin/3.4.1/maven-javadoc-plugin-3.4.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-core/3.2.5/maven-core-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-settings-builder/3.2.5/maven-settings-builder-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-repository-metadata/3.2.5/maven-repository-metadata-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-model-builder/3.2.5/maven-model-builder-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-aether-provider/3.2.5/maven-aether-provider-3.2.5.jar;C:/Users/dinob/.m2/repository/org/eclipse/aether/aether-spi/1.0.0.v20140518/aether-spi-1.0.0.v20140518.jar;C:/Users/dinob/.m2/repository/org/eclipse/aether/aether-impl/1.0.0.v20140518/aether-impl-1.0.0.v20140518.jar;C:/Users/dinob/.m2/repository/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.jar;C:/Users/dinob/.m2/repository/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar;C:/Users/dinob/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.0.M1/org.eclipse.sisu.plexus-0.3.0.M1.jar;C:/Users/dinob/.m2/repository/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar;C:/Users/dinob/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar;C:/Users/dinob/.m2/repository/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.0.M1/org.eclipse.sisu.inject-0.3.0.M1.jar;C:/Users/dinob/.m2/repository/org/sonatype/sisu/sisu-guice/3.2.3/sisu-guice-3.2.3-no_aop.jar;C:/Users/dinob/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar;C:/Users/dinob/.m2/repository/com/google/guava/guava/16.0.1/guava-16.0.1.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.21/plexus-interpolation-1.21.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar;C:/Users/dinob/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar;C:/Users/dinob/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-model/3.2.5/maven-model-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-settings/3.2.5/maven-settings-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-plugin-api/3.2.5/maven-plugin-api-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-artifact/3.2.5/maven-artifact-3.2.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/reporting/maven-reporting-api/3.1.1/maven-reporting-api-3.1.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/maven-archiver/3.6.0/maven-archiver-3.6.0.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-io/3.4.0/plexus-io-3.4.0.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-archiver/4.4.0/plexus-archiver-4.4.0.jar;C:/Users/dinob/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar;C:/Users/dinob/.m2/repository/org/iq80/snappy/snappy/0.4/snappy-0.4.jar;C:/Users/dinob/.m2/repository/org/apache/maven/shared/maven-invoker/3.1.0/maven-invoker-3.1.0.jar;C:/Users/dinob/.m2/repository/org/apache/maven/shared/maven-shared-utils/3.3.3/maven-shared-utils-3.3.3.jar;C:/Users/dinob/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/shared/maven-common-artifact-filters/3.1.1/maven-common-artifact-filters-3.1.1.jar;C:/Users/dinob/.m2/repository/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar;C:/Users/dinob/.m2/repository/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar;C:/Users/dinob/.m2/repository/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar;C:/Users/dinob/.m2/repository/org/apache/maven/shared/maven-artifact-transfer/0.13.1/maven-artifact-transfer-0.13.1.jar;C:/Users/dinob/.m2/repository/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-sink-api/1.11.1/doxia-sink-api-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.11.1/doxia-logging-api-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-site-renderer/1.11.1/doxia-site-renderer-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-core/1.11.1/doxia-core-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-decoration-model/1.11.1/doxia-decoration-model-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-skin-model/1.11.1/doxia-skin-model-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml/1.11.1/doxia-module-xhtml-1.11.1.jar;C:/Users/dinob/.m2/repository/org/apache/maven/doxia/doxia-module-xhtml5/1.11.1/doxia-module-xhtml5-1.11.1.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-i18n/1.0-beta-10/plexus-i18n-1.0-beta-10.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar;C:/Users/dinob/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-velocity/1.2/plexus-velocity-1.2.jar;C:/Users/dinob/.m2/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar;C:/Users/dinob/.m2/repository/commons-lang/commons-lang/2.4/commons-lang-2.4.jar;C:/Users/dinob/.m2/repository/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar;C:/Users/dinob/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar;C:/Users/dinob/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar;C:/Users/dinob/.m2/repository/commons-chain/commons-chain/1.1/commons-chain-1.1.jar;C:/Users/dinob/.m2/repository/dom4j/dom4j/1.1/dom4j-1.1.jar;C:/Users/dinob/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar;C:/Users/dinob/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar;C:/Users/dinob/.m2/repository/org/apache/maven/wagon/wagon-provider-api/2.4/wagon-provider-api-2.4.jar;C:/Users/dinob/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar;C:/Users/dinob/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar;C:/Users/dinob/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar;C:/Users/dinob/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar;C:/Users/dinob/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar;C:/Users/dinob/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar;C:/Users/dinob/.m2/repository/com/thoughtworks/qdox/qdox/2.0.1/qdox-2.0.1.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-java/1.1.0/plexus-java-1.1.0.jar;C:/Users/dinob/.m2/repository/org/ow2/asm/asm/9.2/asm-9.2.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-utils/3.4.2/plexus-utils-3.4.2.jar;C:/Users/dinob/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar;C:/Users/dinob/.m2/repository/org/codehaus/plexus/plexus-interactivity-api/1.1/plexus-interactivity-api-1.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/Users/dinob/IdeaProjects/zadaca1rpr/src/main/java;C:/Users/dinob/IdeaProjects/zadaca1rpr/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2022. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/dinob/IdeaProjects/zadaca1rpr/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'zadaca1rpr 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/Users/dinob/IdeaProjects/zadaca1rpr/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'zadaca1rpr 1.0-SNAPSHOT API'
+ba.unsa.etf.rpr
+'C:/Users/dinob/IdeaProjects/zadaca1rpr/src/main/java/ba/unsa/etf/rpr/App.java'
+'C:/Users/dinob/IdeaProjects/zadaca1rpr/src/main/java/ba/unsa/etf/rpr/ExpressionEvaluator.java'
+C:\Users\dinob\.m2\repository\org\apache\maven\plugins\maven-javadoc-plugin\3.4.1\maven-javadoc-plugin-3.4.1.jar = 1668724433011
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-core\3.2.5\maven-core-3.2.5.jar = 1668724433016
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-settings-builder\3.2.5\maven-settings-builder-3.2.5.jar = 1668724432725
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-repository-metadata\3.2.5\maven-repository-metadata-3.2.5.jar = 1668724432739
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-model-builder\3.2.5\maven-model-builder-3.2.5.jar = 1668724433030
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-aether-provider\3.2.5\maven-aether-provider-3.2.5.jar = 1668724432922
+C:\Users\dinob\.m2\repository\org\eclipse\aether\aether-spi\1.0.0.v20140518\aether-spi-1.0.0.v20140518.jar = 1668724432961
+C:\Users\dinob\.m2\repository\org\eclipse\aether\aether-impl\1.0.0.v20140518\aether-impl-1.0.0.v20140518.jar = 1668724433135
+C:\Users\dinob\.m2\repository\org\eclipse\aether\aether-api\1.0.0.v20140518\aether-api-1.0.0.v20140518.jar = 1668724433191
+C:\Users\dinob\.m2\repository\org\eclipse\aether\aether-util\1.0.0.v20140518\aether-util-1.0.0.v20140518.jar = 1668724433201
+C:\Users\dinob\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.3.0.M1\org.eclipse.sisu.plexus-0.3.0.M1.jar = 1668724433223
+C:\Users\dinob\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar = 1668724433175
+C:\Users\dinob\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar = 1668724433315
+C:\Users\dinob\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.3.0.M1\org.eclipse.sisu.inject-0.3.0.M1.jar = 1668724433470
+C:\Users\dinob\.m2\repository\org\sonatype\sisu\sisu-guice\3.2.3\sisu-guice-3.2.3-no_aop.jar = 1668724433416
+C:\Users\dinob\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar = 1668724433389
+C:\Users\dinob\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar = 1668724433942
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.21\plexus-interpolation-1.21.jar = 1668724433618
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.5.2\plexus-classworlds-2.5.2.jar = 1667089379412
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar = 1666606591864
+C:\Users\dinob\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar = 1666606634361
+C:\Users\dinob\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar = 1666606634283
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-model\3.2.5\maven-model-3.2.5.jar = 1668724433685
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-settings\3.2.5\maven-settings-3.2.5.jar = 1668724433683
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-plugin-api\3.2.5\maven-plugin-api-3.2.5.jar = 1668724433752
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-artifact\3.2.5\maven-artifact-3.2.5.jar = 1668724433941
+C:\Users\dinob\.m2\repository\org\apache\maven\reporting\maven-reporting-api\3.1.1\maven-reporting-api-3.1.1.jar = 1668724433939
+C:\Users\dinob\.m2\repository\org\apache\maven\maven-archiver\3.6.0\maven-archiver-3.6.0.jar = 1668724433941
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-io\3.4.0\plexus-io-3.4.0.jar = 1668724433998
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-archiver\4.4.0\plexus-archiver-4.4.0.jar = 1668724434174
+C:\Users\dinob\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar = 1668724434357
+C:\Users\dinob\.m2\repository\org\iq80\snappy\snappy\0.4\snappy-0.4.jar = 1667087737916
+C:\Users\dinob\.m2\repository\org\apache\maven\shared\maven-invoker\3.1.0\maven-invoker-3.1.0.jar = 1668724434101
+C:\Users\dinob\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.3.3\maven-shared-utils-3.3.3.jar = 1667087737275
+C:\Users\dinob\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar = 1668724434172
+C:\Users\dinob\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.1.1\maven-common-artifact-filters-3.1.1.jar = 1668724434319
+C:\Users\dinob\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar = 1666606633229
+C:\Users\dinob\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar = 1666606634147
+C:\Users\dinob\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar = 1666606635167
+C:\Users\dinob\.m2\repository\org\apache\maven\shared\maven-artifact-transfer\0.13.1\maven-artifact-transfer-0.13.1.jar = 1667087738640
+C:\Users\dinob\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar = 1667087738772
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-sink-api\1.11.1\doxia-sink-api-1.11.1.jar = 1668724434296
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-logging-api\1.11.1\doxia-logging-api-1.11.1.jar = 1668724434327
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-site-renderer\1.11.1\doxia-site-renderer-1.11.1.jar = 1668724434392
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-core\1.11.1\doxia-core-1.11.1.jar = 1668724434501
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-decoration-model\1.11.1\doxia-decoration-model-1.11.1.jar = 1668724434495
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-skin-model\1.11.1\doxia-skin-model-1.11.1.jar = 1668724434490
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml\1.11.1\doxia-module-xhtml-1.11.1.jar = 1668724434493
+C:\Users\dinob\.m2\repository\org\apache\maven\doxia\doxia-module-xhtml5\1.11.1\doxia-module-xhtml5-1.11.1.jar = 1668724434532
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-i18n\1.0-beta-10\plexus-i18n-1.0-beta-10.jar = 1667089379378
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-container-default\1.0-alpha-30\plexus-container-default-1.0-alpha-30.jar = 1666606635676
+C:\Users\dinob\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar = 1666606567559
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-velocity\1.2\plexus-velocity-1.2.jar = 1667087738903
+C:\Users\dinob\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar = 1667087739306
+C:\Users\dinob\.m2\repository\commons-lang\commons-lang\2.4\commons-lang-2.4.jar = 1667087739515
+C:\Users\dinob\.m2\repository\org\apache\velocity\velocity-tools\2.0\velocity-tools-2.0.jar = 1666606637701
+C:\Users\dinob\.m2\repository\commons-beanutils\commons-beanutils\1.7.0\commons-beanutils-1.7.0.jar = 1666606637903
+C:\Users\dinob\.m2\repository\commons-digester\commons-digester\1.8\commons-digester-1.8.jar = 1666606637521
+C:\Users\dinob\.m2\repository\commons-chain\commons-chain\1.1\commons-chain-1.1.jar = 1666606637435
+C:\Users\dinob\.m2\repository\dom4j\dom4j\1.1\dom4j-1.1.jar = 1666606640247
+C:\Users\dinob\.m2\repository\oro\oro\2.0.8\oro-2.0.8.jar = 1666606642611
+C:\Users\dinob\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar = 1667087739752
+C:\Users\dinob\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.4\wagon-provider-api-2.4.jar = 1668724434609
+C:\Users\dinob\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar = 1668724434800
+C:\Users\dinob\.m2\repository\org\apache\commons\commons-text\1.9\commons-text-1.9.jar = 1668724434758
+C:\Users\dinob\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar = 1668724435004
+C:\Users\dinob\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar = 1668724434812
+C:\Users\dinob\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar = 1668724435005
+C:\Users\dinob\.m2\repository\org\apache\httpcomponents\httpcore\4.4.15\httpcore-4.4.15.jar = 1668724435116
+C:\Users\dinob\.m2\repository\com\thoughtworks\qdox\qdox\2.0.1\qdox-2.0.1.jar = 1668724435059
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-java\1.1.0\plexus-java-1.1.0.jar = 1668724435090
+C:\Users\dinob\.m2\repository\org\ow2\asm\asm\9.2\asm-9.2.jar = 1668724435215
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-utils\3.4.2\plexus-utils-3.4.2.jar = 1668724435276
+C:\Users\dinob\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar = 1668724435299
+C:\Users\dinob\.m2\repository\org\codehaus\plexus\plexus-interactivity-api\1.1\plexus-interactivity-api-1.1.jar = 1667087738264
+C:\Users\dinob\IdeaProjects\zadaca1rpr\src\main\java = 1668724879021
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\generated-sources\annotations = 1668877693517
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\allclasses-index.html = 1668878490955
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\allpackages-index.html = 1668878490961
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\element-list = 1668878490871
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\help-doc.html = 1668878491012
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\index-all.html = 1668878490996
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\index.html = 1668878491001
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\jquery-ui.overrides.css = 1668878491085
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\member-search-index.js = 1668878490973
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\module-search-index.js = 1668878490963
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\overview-tree.html = 1668878490936
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\package-search-index.js = 1668878490970
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\script.js = 1668878491020
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\search.js = 1668878491026
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\stylesheet.css = 1668878491017
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\tag-search-index.js = 1668878490976
+C:\Users\dinob\IdeaProjects\zadaca1rpr\target\site\apidocs\type-search-index.js = 1668878490971
